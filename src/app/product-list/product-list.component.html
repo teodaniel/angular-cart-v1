@@ -1,0 +1,16 @@
+<h2>Products</h2>
+<!-- structural directive because it changes the structure of the DOM-->
+<div *ngFor="let product of products">
+<h3>
+  <!-- [properites] -->
+  <a [title] = "product.name + ' details'">
+      <!-- string interpolation -->
+   {{product.name}}
+  </a>
+</h3>
+</div>
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
