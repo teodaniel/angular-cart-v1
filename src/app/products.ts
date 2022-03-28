@@ -1,3 +1,4 @@
+// TYPESCRIPT ENSURES TYPE SAFETY
 export interface Product {
   id: number;
   name: string;

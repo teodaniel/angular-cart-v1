@@ -1,3 +1,4 @@
-<p *ngIf="product && product.price > 700">
+<p *ngIf="product && product.price < 700">
+  {{ product.price * product.price}}
   <button type="button">Notify Me</button>
 </p>
