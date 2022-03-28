@@ -5,12 +5,15 @@
     <!-- [properites] -->
     <a [title]="myProduct.name + ' details'">
       <!-- string interpolation -->
+    
       {{ myProduct.name }}
     </a>
     <p *ngIf="myProduct.description">Description : {{ myProduct.description }}</p>
+    <p>${{ myProduct.price}}</p>
   </h3>
   <!-- event binding in angular -->
   <button type="button" (click)="share()">Share</button>
+  <!-- PROPERTY BINDING -->
   <app-product-alerts [product]="myProduct">
   </app-product-alerts>
 </div>
