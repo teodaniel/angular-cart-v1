@@ -1,13 +1,16 @@
 <h2>Products</h2>
 <!-- structural directive because it changes the structure of the DOM-->
 <div *ngFor="let product of products">
-<h3>
-  <!-- [properites] -->
-  <a [title] = "product.name + ' details'">
+  <h3>
+    <!-- [properites] -->
+    <a [title]="product.name + ' details'">
       <!-- string interpolation -->
-   {{product.name}}
-  </a>
-</h3>
+      {{ product.name }}
+    </a>
+    <p *ngIf="product.description">Description : {{ product.description }}</p>
+  </h3>
+  <!-- event binding in angular -->
+  <button type="button" (click)="share()">Share</button>
 </div>
 <!-- 
 Copyright Google LLC. All Rights Reserved.
