@@ -14,7 +14,7 @@
   <!-- event binding in angular -->
   <button type="button" (click)="share()">Share</button>
   <!-- PROPERTY BINDING -->
-  <app-product-alerts [product]="myProduct">
+  <app-product-alerts [product]="myProduct" (notify)="onNotify()">
   </app-product-alerts>
 </div>
 <!-- 

@@ -1,3 +1,5 @@
 <p *ngIf="product && product.price > 700">
+  <!-- the click system event is used to fire the user defined event -->
+  <!-- nofity.emit() emits the user difined event-->
   <button type="button" (click)="notify.emit()">Notify Me</button>
 </p>
