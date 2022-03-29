@@ -20,22 +20,19 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
       { path: '', component: ProductListComponent },
       // { path: 'prodlist', component: ProductListComponent },
       // configure the path with a parameter
-      { path: 'products/:productId', component:ProductDetailsComponent}
-    ])
+      { path: 'products/:productId', component: ProductDetailsComponent },
+    ]),
   ],
   declarations: [
     AppComponent,
     TopBarComponent,
     ProductListComponent,
     ProductAlertsComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
   ],
-  bootstrap: [
-    AppComponent
-  ]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
-
+export class AppModule {}
 
 /*
 Copyright Google LLC. All Rights Reserved.
