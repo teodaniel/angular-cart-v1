@@ -3,4 +3,5 @@
   <h3>{{ product.name }}</h3>
   <h4>{{ product.price | currency }}</h4>
   <p>{{ product.description | uppercase }} </p>
+  <button type="button" (click)="addToCartComponent(product)">Buy</button>
 </div>
